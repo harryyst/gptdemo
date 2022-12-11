@@ -8,7 +8,7 @@ export default class stRequest{
         this.config =options;
         this.instance = axios.create(options)
         this.instance.interceptors.request.use((config)=>{
-            const token = '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'
+            const token = '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'
             if (token) {
                 config!.headers!.Authorization = `Bearer ${token}`
             }
